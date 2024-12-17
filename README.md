@@ -43,7 +43,7 @@ npm install --save-dev jest @babel/core @babel/preset-env @babel/preset-react ba
 > @babel/preset-react: Allows parsing JSX in React components.
 > babel-jest: Allows Jest to use Babel for transpiling code.
 
-#     Create Babel Configuration: Add a .babelrc or babel.config.js file in the project root directory.
+->>>>>>>    Create Babel Configuration: Add a .babelrc or babel.config.js file in the project root directory.
      ```bash
 {
   "presets": ["@babel/preset-env", "@babel/preset-react"]
