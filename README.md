@@ -38,6 +38,36 @@ Jest: A JavaScript testing framework used to write unit tests for the frontend c
 ```bash
 npm install --save-dev jest @babel/core @babel/preset-env @babel/preset-react babel-jest
 ```
+> @babel/core: Babel's core functionality.
+> @babel/preset-env: Enables transpilation of modern JS to ES5.
+> @babel/preset-react: Allows parsing JSX in React components.
+> babel-jest: Allows Jest to use Babel for transpiling code.
+
+#     Create Babel Configuration: Add a .babelrc or babel.config.js file in the project root directory.
+     ```bash
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+```
+  preset-env: Converts ES6+ code into compatible ES5.
+preset-react: Transpiles JSX syntax used in React components.
+#     Configure Jest:
+      ```bash
+{
+  "scripts": {
+    "test": "jest"
+  }
+}
+
+```
+# Run Tests: 
+   ```bash
+
+npm test
+
+```
+
 
 # Challenges Faced and Solutions: 
 API Integration: One of the key challenges was integrating with the NVD API, ensuring that the data was parsed correctly, 
