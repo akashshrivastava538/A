@@ -35,6 +35,9 @@ Redux: Helps to avoid redundant API calls by storing data globally in the applic
 
 # Testing:
 Jest: A JavaScript testing framework used to write unit tests for the frontend components to ensure the functionality of critical sections like fetching and displaying data.
+```bash
+npm install --save-dev jest @babel/core @babel/preset-env @babel/preset-react babel-jest
+```
 
 # Challenges Faced and Solutions: 
 API Integration: One of the key challenges was integrating with the NVD API, ensuring that the data was parsed correctly, 
@@ -42,6 +45,8 @@ and implementing pagination to handle large amounts of CVE data. This was tackle
 
 State Management: As the project grew in size, managing state across multiple components became challenging. Using Redux simplified this by centralizing the state management and
 ensuring that components could access the data easily without prop drilling.
+
+Git Submodule Issue: Initially, the frontend folder was mistakenly treated as a Git submodule, which caused issues with pushing the code to GitHub. This was resolved by removing the submodule, re-adding the frontend folder as a regular directory, and pushing the changes again.
 
 # Conclusion
 The CVE Management System project helped me to hone my skills in full-stack development. I worked extensively with ReactJS, Redux, Node.js, Express, and Axios to fetch and display data
